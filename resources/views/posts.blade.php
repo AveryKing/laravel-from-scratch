@@ -7,7 +7,7 @@
 <body>
 
 <article>
-    <a href="/post"><h1>First Post</h1></a>
+    <a href="/posts/first-post"><h1>First Post</h1></a>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto dolorem fugit libero optio possimus
     quidem quos sequi, suscipit? Aliquam dignissimos dolorum eius fugiat necessitatibus nesciunt rem reprehenderit
     tempora tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores at consectetur
@@ -20,7 +20,7 @@
 </p>
 </article>
 <article>
-    <a href="/post"><h1>Second Post</h1></a>
+    <a href="/posts/second-post"><h1>Second Post</h1></a>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto dolorem fugit libero optio possimus
     quidem quos sequi, suscipit? Aliquam dignissimos dolorum eius fugiat necessitatibus nesciunt rem reprehenderit
     tempora tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores at consectetur
@@ -33,7 +33,7 @@
 </p>
 </article>
 <article>
-    <a href="/post"><h1>Third Post</h1></a>
+    <a href="/posts/third-post"><h1>Third Post</h1></a>
 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci architecto dolorem fugit libero optio possimus
     quidem quos sequi, suscipit? Aliquam dignissimos dolorum eius fugiat necessitatibus nesciunt rem reprehenderit
     tempora tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. A aliquam asperiores at consectetur
