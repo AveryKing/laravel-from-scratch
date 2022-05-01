@@ -8,8 +8,8 @@
 
 
 <article>
-    <?= $title ?>
-    <?= $body ?>
+    <?= $post ?>
+
 </article>
 <a href="/">Go back</a>
 <script type="text/javascript" src="/app.js"></script>
