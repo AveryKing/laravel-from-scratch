@@ -18,8 +18,12 @@ Route::get('/', function () {
 });
 
 Route::get('posts/{post}', function ($slug) {
-    $relativePath = '/../resources/posts/'.$slug .'.html';
-    $post = file_get_contents(__DIR__ . $relativePath);
+    $path = __DIR__ .'/../resources/posts/'.$slug .'.html';
+    if(!file_exists($path)) {
+        //return redirect('/');
+        abort(404);
+    }
+    $post = file_get_contents($path);
     return view('post', [
         'post' => $post
     ]);
