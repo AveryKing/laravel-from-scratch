@@ -16,4 +16,14 @@ class Post
         return cache()->remember("post.{$slug}", 1200, fn() => file_get_contents($path));
 
     }
+
+    public static function all(): array
+    {
+        $posts = [];
+        foreach (glob(resource_path("posts/*.html")) as $path) {
+            $slug = basename($path, ".html");
+            $posts[$slug] = self::find($slug);
+        }
+        return $posts;
+    }
 }
