@@ -13,22 +13,15 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('posts');
-});
+Route::get('/', fn() => view('posts'));
 
 Route::get('posts/{post}', function ($slug) {
-    $path = __DIR__ .'/../resources/posts/'.$slug .'.html';
-    if(!file_exists($path)) {
-        //return redirect('/');
+    $path = __DIR__ . '/../resources/posts/' . $slug . '.html';
+    if (!file_exists($path)) {
         abort(404);
     }
 
-    $post = cache()->remember("post.{$slug}", 5, function() use ($path) {
-        var_dump('file_get_contents');
-        return file_get_contents($path);
-    });
-
+    $post = cache()->remember("post.{$slug}", 5, fn() => file_get_contents($path));
 
     return view('post', [
         'post' => $post
